@@ -9,7 +9,6 @@ import android.view.View.OnClickListener
 import androidx.core.util.Supplier
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
-import com.set.sazib.BuildConfig
 import com.set.sazib.R
 import com.set.sazib.data.api.ApiService
 import com.set.sazib.data.service.App
@@ -99,12 +98,10 @@ class PropertyFindActivity : BaseActivity(), OnClickListener, CoroutineScope {
         PropertyFindActivityVM::class.java
     )
 
-    if (BuildConfig.DEBUG) {
       binding.etCity.setText("Rochester")
       binding.etZip.setText("14624")
       binding.etState.setText("NY")
       binding.etStreetAddress.setText("151 Battle Green")
-    }
   }
 
   override fun onClick(v: View?) {

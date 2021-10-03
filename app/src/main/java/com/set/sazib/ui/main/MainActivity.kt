@@ -77,10 +77,10 @@ class MainActivity : BaseActivity(), OnClickListener, CoroutineScope {
     val fragments: ArrayList<Fragment> = ArrayList()
     val tag: ArrayList<String> = ArrayList()
 
-    val city = intent.getSerializableExtra(CITY)
-    val zip = intent.getSerializableExtra(ZIP)
-    val address = intent.getSerializableExtra(ADDRESS)
-    val state = intent.getSerializableExtra(STATE)
+    val city = "${intent.getSerializableExtra(CITY)}"
+    val zip = "${intent.getSerializableExtra(ZIP)}"
+    val address = "${intent.getSerializableExtra(ADDRESS)}"
+    val state = "${intent.getSerializableExtra(STATE)}"
 
     fragments.add(SearchListFragment.newInstance("$city", "$zip", "$address", "$state"))
     tag.add(SearchListFragment.TAG)
