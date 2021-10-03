@@ -1,0 +1,53 @@
+<resources>
+  <string name="app_name">Schedule</string>
+
+  <string name="login_hint"><![CDATA[Please enter ID, PIN & Password]]></string>
+  <string name="register_customer">Register Customer</string>
+  <string name="view_customer">View Customer</string>
+
+  <string name="hello_blank_fragment">No notification found!</string>
+  <string name="table_view">Skill View</string>
+  <string name="agent_states">Agent Status</string>
+  <string name="alerts">Alerts</string>
+  <string name="feedback">Feedback</string>
+  <string name="mtd">MTD</string>
+  <string name="ftd">FTD</string>
+  <string name="service_level">Service Level</string>
+  <string name="average_ht">AHT</string>
+  <string name="average_wt">AWT</string>
+  <string name="offered_call">Offered Call</string>
+  <string name="answered_call">Answered Call</string>
+  <string name="abandoned_call">Ab. Call</string>
+  <string name="call_waiting">Call Waiting</string>
+  <string name="loggedin_agents">Logged in Agents</string>
+  <string name="idle_agents">Idle Agents</string>
+  <string name="not_ready_agents">Not Ready Agents</string>
+  <string name="acw_agents">ACW Agents</string>
+  <string name="profile">Profile</string>
+  <string name="notes">Note</string>
+  <string name="back">Back</string>
+
+  <!--APi msg-->
+  <string name="something_went_wrong">Something went wrong</string>
+  <string name="something_error_happened">Something error happened</string>
+  <string name="no_internet">No internet connection</string>
+  <string name="logout">Logout</string>
+  <string name="notification">Notification</string>
+  <string name="note">Note</string>
+  <string name="menu">Menu</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="get_started">Get Started</string>
+  <string name="street_address">Street Address</string>
+  <string name="city">City</string>
+  <string name="zip_code">Zip Code</string>
+  <string name="location_hint">Enter your location address</string>
+  <string name="select_location">Select Location</string>
+  <string name="buy_and_sale_property_easily">Buy and sale property easily</string>
+  <string name="state">State</string>
+  <string name="search">Search</string>
+  <string name="update">Update</string>
+  <string name="saved_homes">Saved Homes</string>
+  <string name="your_home">Your Home</string>
+  <!--end-->
+
+</resources>

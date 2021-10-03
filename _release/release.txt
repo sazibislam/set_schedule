@@ -1,0 +1,12 @@
+key store name : 
+key store password : 
+
+Alias: set_schedule
+PASSWORD: 8?SET%(&
+validity years : 200
+First and Last Name : Saiful Sazib
+Organizational Unit: technest
+Organization: technest.com.bd
+City: Dhaka
+State: Dhaka
+Country Code: BD

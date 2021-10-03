@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+  <item
+      android:id="@+id/nav_search"
+      android:icon="@drawable/ic_awesome_search"
+      android:title="@string/search"
+      app:showAsAction="always" />
+  <item
+      android:id="@+id/nav_update"
+      android:icon="@drawable/ic_awesome_search"
+      android:title="@string/update"
+      app:showAsAction="always" />
+  <item
+      android:id="@+id/nav_fab"
+      android:title=""
+      app:showAsAction="ifRoom" />
+  <item
+      android:id="@+id/nav_saved_search"
+      android:icon="@drawable/ic_awesome_search"
+      android:title="@string/saved_homes"
+      app:showAsAction="always" />
+  <item
+      android:id="@+id/nav_home"
+      android:icon="@drawable/ic_menu"
+      android:title="@string/your_home"
+      app:showAsAction="always" />
+
+</menu>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_register"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    tools:context="com.kwikkoders.sazib.ui.splash.SplashActivity"
+    >
+
+  <TextView
+      android:id="@+id/textView"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center"
+      android:fontFamily="@font/arial_nova_bold"
+      android:gravity="center"
+      android:text="@string/app_name"
+      android:textAllCaps="true"
+      android:textColor="@color/colorPrimaryDark"
+      android:textSize="32sp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/iv_customer_device"
+      />
+
+  <TextView
+      android:id="@+id/tvSubTitle"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center"
+      android:fontFamily="@font/arial_nova"
+      android:text="@string/buy_and_sale_property_easily"
+      android:textAllCaps="false"
+      android:textColor="@color/colorPurple"
+      android:textSize="13sp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/textView"
+      />
+
+  <androidx.appcompat.widget.AppCompatImageView
+      android:id="@+id/iv_customer_device"
+      android:layout_width="@dimen/dp_0"
+      android:layout_height="@dimen/dp_0"
+      android:background="@drawable/ic_logo"
+      app:layout_constraintBottom_toTopOf="@+id/gd_logo_middle"
+      app:layout_constraintEnd_toStartOf="@+id/gd_img_right"
+      app:layout_constraintStart_toStartOf="@+id/gd_img_left"
+      app:layout_constraintTop_toTopOf="@+id/gd_logo_top"
+      />
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+      android:id="@+id/linearLayout"
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      android:layout_weight="0.8"
+      android:background="@drawable/ic_login_bg"
+      android:gravity="center_horizontal"
+      android:orientation="vertical"
+      android:paddingLeft="30dp"
+      android:paddingRight="30dp"
+      android:paddingTop="10dp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/tvSubTitle"
+      />
+
+  <androidx.constraintlayout.widget.Guideline
+      android:id="@+id/gd_img_left"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintGuide_percent=".20"
+      app:layout_constraintStart_toStartOf="parent"
+      />
+
+  <androidx.constraintlayout.widget.Guideline
+      android:id="@+id/gd_img_right"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintGuide_percent=".80"
+      app:layout_constraintStart_toStartOf="parent"
+      />
+
+  <androidx.constraintlayout.widget.Guideline
+      android:id="@+id/gd_logo_middle"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintGuide_percent=".40"
+      app:layout_constraintStart_toStartOf="parent"
+      />
+
+  <androidx.constraintlayout.widget.Guideline
+      android:id="@+id/gd_logo_top"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintGuide_percent=".10"
+      app:layout_constraintStart_toStartOf="parent"
+      />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

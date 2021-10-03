@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/colorGray"
+    android:visibility="gone"
+    tools:visibility="visible"
+    >
+
+  <!-- content header line -->
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="@color/white"
+      android:orientation="vertical"
+      android:paddingBottom="6dp"
+      android:paddingLeft="20dp"
+      android:paddingRight="20dp"
+      android:paddingTop="9dp"
+      >
+
+    <!-- avatar and name part -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="6dp"
+        android:layout_marginTop="9dp"
+        android:src="@color/colorGray"
+        />
+
+    <!-- own address -->
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        >
+
+      <androidx.constraintlayout.widget.ConstraintLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/content_avatar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_pro_pic"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:contentDescription="@string/app_name"
+            />
+
+        <TextView
+            android:id="@+id/streetAddress"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            tools:text="@string/street_address"
+            android:textColor="@color/text_color"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/content_avatar"
+            app:layout_constraintTop_toBottomOf="@+id/content_name_view"
+            />
+
+        <TextView
+            android:id="@+id/content_name_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/content_avatar"
+            android:layout_marginStart="8dp"
+            android:layout_toEndOf="@id/content_avatar"
+            android:textColor="@color/text_color"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/content_avatar"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Name"
+            />
+
+        <TextView
+            android:id="@+id/city"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/content_avatar"
+            android:layout_marginStart="8dp"
+            android:layout_toEndOf="@id/content_avatar"
+            android:textColor="@color/text_color"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/content_avatar"
+            app:layout_constraintTop_toBottomOf="@+id/streetAddress"
+            tools:text="city"
+            />
+
+        <TextView
+            android:id="@+id/ownerOccupied"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/content_avatar"
+            android:layout_marginStart="8dp"
+            android:layout_toEndOf="@id/content_avatar"
+            android:textColor="@color/text_color"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/content_avatar"
+            app:layout_constraintTop_toBottomOf="@+id/city"
+            tools:text="owner_occupied"
+            />
+
+      </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </RelativeLayout>
+
+    <!-- divider line -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="6dp"
+        android:layout_marginTop="7dp"
+        android:src="@color/colorGray"
+        />
+
+    <!-- Parcel part -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        >
+
+      <RelativeLayout
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          >
+
+        <TextView
+            android:id="@+id/area_acres"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:text="area acres"
+            style="@style/ContentMainBadgeTitle"
+            />
+
+        <TextView
+            android:id="@+id/county_land_use_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/area_acres"
+            android:layout_below="@id/area_acres"
+            android:text="county land use code"
+            android:textColor="@color/text_color"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/county_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/county_land_use_code"
+            android:layout_alignStart="@id/county_land_use_code"
+            android:layout_below="@id/county_land_use_code"
+            android:text="county name"
+            android:textColor="@color/colorBlack"
+            android:textSize="14sp"
+            />
+
+      </RelativeLayout>
+
+      <RelativeLayout
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          >
+
+        <TextView
+            android:id="@+id/content_to_address_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/building_count"
+            android:layout_below="@id/building_count"
+            android:text="subdivision"
+            android:textColor="@color/text_color"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/municipality"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/content_to_address_1"
+            android:layout_below="@id/content_to_address_1"
+            android:text="municipality"
+            android:textColor="@color/text_color"
+            android:textSize="14sp"
+            />
+
+        <TextView
+            android:id="@+id/building_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:text="building count"
+            style="@style/ContentMainBadgeTitle"
+            />
+
+      </RelativeLayout>
+
+    </LinearLayout>
+
+    <!-- divider line -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        >
+
+      <RelativeLayout
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          >
+
+        <TextView
+            android:id="@+id/county_land_use_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:text="county land use description"
+            style="@style/ContentMainBadgeTitle"
+            />
+
+        <TextView
+            android:id="@+id/legal_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/county_land_use_description"
+            android:layout_below="@id/county_land_use_description"
+            android:text="legal description"
+            android:textColor="@color/text_color"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            />
+
+      </RelativeLayout>
+
+      <RelativeLayout
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          >
+
+        <TextView
+            android:id="@+id/location_descriptions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:text="location descriptions"
+            style="@style/ContentMainBadgeTitle"
+            />
+
+      </RelativeLayout>
+
+    </LinearLayout>
+
+    <!-- request button -->
+    <TextView
+        android:id="@+id/content_request_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@color/colorPurpleLight"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="@string/get_started"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        android:text="5 people have sent a request"
+        android:textColor="@color/text_color"
+        android:textSize="12sp"
+        />
+
+  </LinearLayout>
+
+</LinearLayout>
